@@ -1,0 +1,1 @@
+puts File.read('euler13.txt').split("\n").map {|num| num.to_i}.reduce(0,:+).digits.reverse[0..9].join

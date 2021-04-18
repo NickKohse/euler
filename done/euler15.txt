@@ -1,0 +1,1 @@
+for n * n lattice there are 2n choose n paths

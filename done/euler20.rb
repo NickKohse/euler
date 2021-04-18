@@ -1,0 +1,1 @@
+(1..100).reduce(1,:*).digits.reduce(0, :+)
