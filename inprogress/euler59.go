@@ -27,7 +27,7 @@ func main() {
 		for _, val := range cText {
 			intVal, _ := strconv.Atoi(val) //ignore errors, as I know whats in file
 			decrypted := intVal ^ key[keyPtr]
-			if (decrypted < 32 || decrypted > 126) { //it's a control character or DEL or invalid, and wouldn't be in the decoded text
+			if (decrypted < 33 || decrypted > 126) { //it's a control character or DEL or invalid, and wouldn't be in the decoded text
 				valErr = true
 				break
 			}
